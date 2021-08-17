@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu Da Cap</title>
+</head>
+<style type="text/css">
+	.dropbtn{
+		background-color: #58257b;
+		color: white;
+        font-weight: bold;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+	}
+	.dropdown{
+		position: relative;
+		display: inline-block;
+	}
+	.dropdown-content{
+		display: none;
+		position: absolute;
+		background-color: #e9d8f4;
+		min-width: 160px;
+		box-shadow: 0px 8px 16 px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+	.dropdown-content a{
+        color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+	}
+	.dropdown-content a:hover {
+  background-color: #58257b;
+  color: white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/ * Thay đổi màu nền của nút thả xuống khi nội dung được hiển thị * /
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+</style>
+<body>
+	<h2>Menu da cap</h2>
+	<p>Di chuot vao phia duoi de hien thi menu tha xuong</p>
+    
+    <div class="dropdown">
+    	<button class="dropbtn" >Lap Trinh</button>
+    	<div class="dropdown-content">
+    		<a href="#">CSS và CSS3</a>
+    		<a href="#">HTML</a>
+    		<a href="#">JAVA</a>
+    	</div>
+    </div>
+</body>
+</html>
